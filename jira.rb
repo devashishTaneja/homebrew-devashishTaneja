@@ -5,11 +5,11 @@
 class Jira < Formula
   desc ""
   homepage "https://github.com/devashishTaneja/jira-cli"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
-    url "https://github.com/devashishTaneja/jira-cli/releases/download/0.0.4/jira-cli_0.0.4_darwin_all.tar.gz"
-    sha256 "e6c003ddd1ad7fe54900ccf0c44ef6582d1dfa91f22fd9bd5be27a18af52878b"
+    url "https://github.com/devashishTaneja/jira-cli/releases/download/0.0.5/jira-cli_0.0.5_darwin_all.tar.gz"
+    sha256 "405194d628b7a424dde874a669d2515aaedada1b789cf1f78e23dde2aef9390e"
 
     def install
       bin.install "jira-cli"
@@ -18,16 +18,16 @@ class Jira < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devashishTaneja/jira-cli/releases/download/0.0.4/jira-cli_0.0.4_linux_arm64.tar.gz"
-      sha256 "c7fe879ecc4cb2c2efb1cfb4e53608a0d5e48008d388e9f8262240ae5f804348"
+      url "https://github.com/devashishTaneja/jira-cli/releases/download/0.0.5/jira-cli_0.0.5_linux_arm64.tar.gz"
+      sha256 "bf63cb63760e167ab168aef51b058e3ec430b19405ddd810f94712af137fe26a"
 
       def install
         bin.install "jira"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/devashishTaneja/jira-cli/releases/download/0.0.4/jira-cli_0.0.4_linux_amd64.tar.gz"
-      sha256 "7627558e3cf98e5d9c2768bb9899143cff904cd61bf79cdd2cab9d7c12634caf"
+      url "https://github.com/devashishTaneja/jira-cli/releases/download/0.0.5/jira-cli_0.0.5_linux_amd64.tar.gz"
+      sha256 "f800a9954411e9fb945e1ff810f6736cbff0132d3cfb2d60c3bcbf1822940fa6"
 
       def install
         bin.install "jira"
